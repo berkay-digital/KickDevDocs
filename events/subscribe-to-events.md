@@ -1,6 +1,8 @@
+---
+icon: left-long-to-line
+---
+
 # Subscribe to Events
-
-
 
 {% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/events/subscriptions" method="get" %}
 [https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
