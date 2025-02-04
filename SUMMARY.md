@@ -4,7 +4,6 @@
 
 ## Getting Started
 
-* [Quickstart](getting-started/quickstart.md)
 * [App Setup](getting-started/kick-apps-setup.md)
 * [Generating Tokens / OAuth2 Flow](getting-started/generating-tokens-oauth2-flow.md)
 
