@@ -9,24 +9,15 @@ description: The Kick OAuth Flow.
 * Token
 * Token Refresh
 
-
-
 ## Token Types
 
 There are 2 types of tokens that are available for the Kick Dev API: App Access Token and User Access Token. Each token has a unique OAuth flow to generate the token and are generally used in different scenarios.
 
 ### App Access Token
 
-The App Access Token are tokens generated through the \<insert oauth flow here> flow. They are server to server API tokens and are the most basic  from of token to access the API. App Access Tokens can access publically accessible
+App Access Tokens are generated through the Client Credentials flow. These server-to-server API tokens are the most basic form of token for accessing the API. They can access publicly available data and are ideal for use when user login is not required.
 
-{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/oauth/authorize" method="get" %}
-[https://api.easygo-drop-kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
-{% endswagger %}
+### User Access Token
 
-{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/oauth/token" method="post" %}
-[https://api.easygo-drop-kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
-{% endswagger %}
+User Access Tokens are generated through the Authorization Grant Flow. These token give an application access to the users information based on the scopes the App has requested. This give more privileged information and access to an App and will often allow an App to act on the users behalf.&#x20;
 
-{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/oauth/revoke" method="post" %}
-[https://api.easygo-drop-kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
-{% endswagger %}
