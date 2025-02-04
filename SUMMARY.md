@@ -5,7 +5,7 @@
 ## Getting Started
 
 * [App Setup](getting-started/kick-apps-setup.md)
-* [Generating Tokens / OAuth2 Flow](getting-started/generating-tokens-oauth2-flow.md)
+* [OAuth 2.1](getting-started/generating-tokens-oauth2-flow.md)
 
 ## APIs
 
@@ -18,4 +18,4 @@
 * [Introduction](events/introduction.md)
 * [Webhooks](events/webhook-security.md)
 * [Subscribe to Events](events/subscribe-to-events.md)
-* [Event Types](events/event-types.md)
+* [Webhook Payloads](events/event-types.md)

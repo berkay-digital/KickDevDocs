@@ -3,7 +3,7 @@ icon: unlock-keyhole
 description: The Kick OAuth Flow.
 ---
 
-# Generating Tokens / OAuth2 Flow
+# OAuth 2.1
 
 * Authorization
 * Token
@@ -13,7 +13,7 @@ description: The Kick OAuth Flow.
 
 There are 2 types of tokens that are available for the Kick Dev API: App Access Token and User Access Token. Each token has a unique OAuth flow to generate the token and are generally used in different scenarios.
 
-### App Access Token
+### App Access Token (Not yet implemented)
 
 App Access Tokens are generated through the Client Credentials flow. These server-to-server API tokens are the most basic form of token for accessing the API. They can access publicly available data and are ideal for use when user login is not required.
 
