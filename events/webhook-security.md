@@ -81,3 +81,6 @@ After a certain thresholds of errors received from an apps webhook endpoint, Kic
 
 The app would then need to resubscribe to webhooks.
 
+{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/oauth/revoke" method="post" %}
+[https://api.easygo-drop-kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
+{% endswagger %}
