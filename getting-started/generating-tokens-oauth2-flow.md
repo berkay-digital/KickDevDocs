@@ -1,5 +1,6 @@
 ---
 icon: unlock-keyhole
+description: The Kick OAuth Flow.
 ---
 
 # Generating Tokens / OAuth2 Flow
@@ -8,10 +9,17 @@ icon: unlock-keyhole
 * Token
 * Token Refresh
 
-{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/categories" method="get" %}
-[https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
-{% endswagger %}
 
-{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/categories/:category_id" method="get" %}
-[https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
-{% endswagger %}
+
+## Token Types
+
+There are 2 types of tokens that are available for the Kick Dev API: App Access Token and User Access Token. Each token has a unique OAuth flow to generate the token and are generally used in different scenarios.
+
+### App Access Token
+
+The App Access Token are tokens generated through the \<insert oauth flow here> flow. They are server to server API tokens and are the most basic  from of token to access the API. App Access Tokens can access publically accessible
+
+
+
+
+

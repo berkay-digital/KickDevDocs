@@ -1,7 +1,7 @@
 ---
 icon: hand-wave
-cover: https://gitbookio.github.io/onboarding-template-images/header.png
-coverY: 0
+cover: .gitbook/assets/hero.png
+coverY: -8
 layout:
   cover:
     visible: true
