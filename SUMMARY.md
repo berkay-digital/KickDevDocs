@@ -5,13 +5,18 @@
 ## Getting Started
 
 * [Quickstart](getting-started/quickstart.md)
-* [Publish your docs](getting-started/publish-your-docs.md)
+* [Kick Apps Setup](getting-started/kick-apps-setup.md)
+* [Generating Tokens / OAuth2 Flow](getting-started/generating-tokens-oauth2-flow.md)
 
-## Basics
+## APIs
 
-* [Editor](basics/editor.md)
-* [Markdown](basics/markdown.md)
-* [Images & media](basics/images-and-media.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [OpenAPI](basics/openapi.md)
-* [Integrations](basics/integrations.md)
+* [Categories](apis/categories.md)
+* [Users](apis/users.md)
+* [Channels](apis/channels.md)
+
+## Events
+
+* [Introduction](events/introduction.md)
+* [Webhook Security](events/webhook-security.md)
+* [Subscribe to Events](events/subscribe-to-events.md)
+* [Event Types](events/event-types.md)
