@@ -1,5 +1,6 @@
 ---
 icon: rocket-launch
+description: Walkthrough on creating a Kick App
 ---
 
 # Kick Apps Setup
