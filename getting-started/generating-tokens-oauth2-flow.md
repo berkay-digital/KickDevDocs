@@ -21,3 +21,14 @@ App Access Tokens are generated through the Client Credentials flow. These serve
 
 User Access Tokens are generated through the Authorization Grant Flow. These token give an application access to the users information based on the scopes the App has requested. This give more privileged information and access to an App and will often allow an App to act on the users behalf.&#x20;
 
+{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/oauth/authorize" method="get" %}
+[https://api.easygo-drop-kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
+{% endswagger %}
+
+{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/oauth/token" method="post" %}
+[https://api.easygo-drop-kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
+{% endswagger %}
+
+{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/oauth/revoke" method="post" %}
+[https://api.easygo-drop-kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
+{% endswagger %}
