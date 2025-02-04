@@ -1,7 +1,7 @@
 ---
 icon: hand-wave
-cover: .gitbook/assets/hero.png
-coverY: -8
+cover: .gitbook/assets/hero (1).png
+coverY: 0
 layout:
   cover:
     visible: true
