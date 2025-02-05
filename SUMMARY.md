@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+  * [Contributing](readme/contributing.md)
 
 ## Getting Started
 
