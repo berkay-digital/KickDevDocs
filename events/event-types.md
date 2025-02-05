@@ -1,5 +1,6 @@
 ---
 icon: font-case
+description: Request body payloads for Webhook API requests
 ---
 
 # Webhook Payloads
@@ -7,8 +8,9 @@ icon: font-case
 ## Chat Message
 
 ```json
-// Some code
-Header: Kick-Event-Type: “chat.message.sent”
+Headers
+- Kick-Event-Type: “chat.message.sent”
+- Kick-Event-Version: “1”
 
 {
   "message_id": "unique_message_id_123",
@@ -17,7 +19,6 @@ Header: Kick-Event-Type: “chat.message.sent”
     "username": "broadcaster_name",
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-    "channel_id": 987654321,
     "channel_slug": "broadcaster_channel"
   },
   "sender": {
@@ -25,7 +26,6 @@ Header: Kick-Event-Type: “chat.message.sent”
     "username": "sender_name",
     "is_verified": false,
     "profile_picture": "https://example.com/sender_avatar.jpg",
-    "channel_id": 987654321,
     "channel_slug": "sender_channel"
   },
   "content": "This is a test message with emotes!",
@@ -49,8 +49,9 @@ Header: Kick-Event-Type: “chat.message.sent”
 ## Channel Follow
 
 ```json
-// Some code
-Header: Kick-Event-Type: “channel.followed”
+Headers
+- Kick-Event-Type: “channel.followed”
+- Kick-Event-Version: “1”
 
 {
   "broadcaster": {
@@ -58,7 +59,6 @@ Header: Kick-Event-Type: “channel.followed”
     "username": "broadcaster_name",
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-    "channel_id": 987654321,
     "channel_slug": "broadcaster_channel"
   },
   "follower": {
@@ -66,7 +66,6 @@ Header: Kick-Event-Type: “channel.followed”
     "username": "follower_name",
     "is_verified": false,
     "profile_picture": "https://example.com/sender_avatar.jpg",
-    "channel_id": 987654321,
     "channel_slug": "follower_channel"
   }
 }
@@ -75,8 +74,9 @@ Header: Kick-Event-Type: “channel.followed”
 ## Channel Subscription Renewal
 
 ```json
-// Some code
-Header: Kick-Event-Type: “channel.subscription.renewal”
+Headers
+- Kick-Event-Type: “channel.subscription.renewal”
+- Kick-Event-Version: “1”
 
 {
   "broadcaster": {
@@ -84,7 +84,6 @@ Header: Kick-Event-Type: “channel.subscription.renewal”
     "username": "broadcaster_name",
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-    "channel_id": 987654321,
     "channel_slug": "broadcaster_channel"
   },
   "subscriber": {
@@ -92,7 +91,6 @@ Header: Kick-Event-Type: “channel.subscription.renewal”
     "username": "subscriber_name",
     "is_verified": false,
     "profile_picture": "https://example.com/sender_avatar.jpg",
-    "channel_id": 987654321,
     "channel_slug": "subscriber_channel"
   },
   "duration": 3.
@@ -103,8 +101,9 @@ Header: Kick-Event-Type: “channel.subscription.renewal”
 ## Channel Subscription Gifts
 
 ```json
-// Some code
-Header: Kick-Event-Type: “channel.subscription.gifts”
+Headers
+- Kick-Event-Type: “channel.subscription.gifts”
+- Kick-Event-Version: “1”
 
 {
   "broadcaster": {
@@ -112,7 +111,6 @@ Header: Kick-Event-Type: “channel.subscription.gifts”
     "username": "broadcaster_name",
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-    "channel_id": 987654321,
     "channel_slug": "broadcaster_channel"
   },
   "gifter": {
@@ -120,7 +118,6 @@ Header: Kick-Event-Type: “channel.subscription.gifts”
     "username": "gifter_name",
     "is_verified": false,
     "profile_picture": "https://example.com/sender_avatar.jpg",
-    "channel_id": 987654321,
     "channel_slug": "gifter_channel"
   },
   "giftees": 
@@ -130,7 +127,6 @@ Header: Kick-Event-Type: “channel.subscription.gifts”
       "username": "giftee_name",
       "is_verified": true,
       "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-      "channel_id": 546546545,
       "channel_slug": "giftee_channel"
     }
   ],
@@ -141,8 +137,9 @@ Header: Kick-Event-Type: “channel.subscription.gifts”
 ## Channel Subscription Created
 
 ```json
-// Some code
-Header: Kick-Event-Type: “channel.subscription.new”
+Headers
+- Kick-Event-Type: “channel.subscription.new”
+- Kick-Event-Version: “1”
 
 {
   "broadcaster": {
@@ -150,7 +147,6 @@ Header: Kick-Event-Type: “channel.subscription.new”
     "username": "broadcaster_name",
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-    "channel_id": 987654321,
     "channel_slug": "broadcaster_channel"
   },
   "subscriber": {
@@ -158,7 +154,6 @@ Header: Kick-Event-Type: “channel.subscription.new”
     "username": "subscriber_name",
     "is_verified": false,
     "profile_picture": "https://example.com/sender_avatar.jpg",
-    "channel_id": 987654321,
     "channel_slug": "subscriber_channel"
   },
   "duration": 1.
