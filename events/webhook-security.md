@@ -4,13 +4,11 @@ icon: lock
 
 # Webhooks
 
-Both App and User access tokens can access this at the moment.&#x20;
+Both App and User access tokens can access this at the moment.
 
 ## Headers
 
-<table><thead><tr><th width="302">Header</th><th width="200">Type</th><th>Short Description</th></tr></thead><tbody><tr><td>Kick-Event-Message-Id</td><td>UUID</td><td>Unique message id, idempotent key.</td></tr><tr><td>Kick-Event-Message-Signature</td><td>Base64 Encode String</td><td>(We are working on this one)</td></tr><tr><td>Kick-Event-Message-Timestamp</td><td>RFC3339 Date-time</td><td>Timestamp of when the message was sent</td></tr><tr><td>Kick-Event-Type</td><td>string</td><td></td></tr><tr><td>Kick-Event-Version</td><td>string (1.0)</td><td></td></tr></tbody></table>
-
-
+<table><thead><tr><th width="302">Header</th><th width="200">Type</th><th>Short Description</th></tr></thead><tbody><tr><td>Kick-Event-Message-Id</td><td>ULID</td><td>Unique message id, idempotent key.</td></tr><tr><td>Kick-Event-Signature</td><td>Base64 Encode String</td><td>Signature to verify the sender</td></tr><tr><td>Kick-Event-Message-Timestamp</td><td>RFC3339 Date-time</td><td>Timestamp of when the message was sent</td></tr><tr><td>Kick-Event-Type</td><td>string</td><td></td></tr><tr><td>Kick-Event-Version</td><td>string (1.0)</td><td></td></tr></tbody></table>
 
 ## Webhook Sender Validation
 
@@ -73,14 +71,14 @@ func Verify(publicKey *rsa.PublicKey, body []byte, signature []byte) error {
 
 ## Retrying Sending of Events
 
-Kick will attempt to send a webhook 3 times over a period of time until a 200 response is made by the server.&#x20;
+Kick will attempt to send a webhook 3 times over a period of time until a 200 response is made by the server.
 
 ## Disabling of webhooks
 
-After a certain thresholds of errors received from an apps webhook endpoint, Kick may automatically unsubscribe the app from receiving webhooks.&#x20;
+After a certain thresholds of errors received from an apps webhook endpoint, Kick may automatically unsubscribe the app from receiving webhooks.
 
 The app would then need to resubscribe to webhooks.
 
 {% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/oauth/revoke" method="post" %}
-[https://api.easygo-drop-kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
+[https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
 {% endswagger %}
