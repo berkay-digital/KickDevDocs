@@ -21,8 +21,6 @@ App Access Tokens are generated through the Client Credentials flow. These serve
 
 User Access Tokens are generated through the Authorization Grant Flow. These token give an application access to the users information based on the scopes the App has requested. This give more privileged information and access to an App and will often allow an App to act on the users behalf.
 
-
-
 ## Kick OAuth Server
 
 The Kick OAuth server is hosted on id.kick.com.
@@ -33,7 +31,7 @@ Available endpoints are below.
 
 
 
-{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/oauth/authorize" method="get" %}
+{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/oauth/authorize" method="post" %}
 [https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
 {% endswagger %}
 
