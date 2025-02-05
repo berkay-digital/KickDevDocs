@@ -26,3 +26,8 @@ Discord will be our location for back and forth conversations with other like mi
 
 Discuss how you've done something, Ask a question, Answer a Question and showcase your work to the community!
 
+## Documentation
+
+Please help improve our docs! See something that isn't correct? See a typo that's bothering you?&#x20;
+
+You can help improve the documentation by opening a Pull Request on our [Github Repository](https://github.com/KickEngineering/KickDevDocs/issues).
