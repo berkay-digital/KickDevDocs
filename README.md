@@ -24,7 +24,7 @@ Hey there! Welcome to the Kick Developer Docs 👋
 
 You will find a range of features and documentation on how to integrate with the Kick API.
 
-## A Letter to the Developers
+## A letter to the Developers
 
 Hi :wave: Just want to let you know what we are working on in this closed-beta phase, to keep you up to date with what might be changing during this phase, what is stable and what is to come.
 
