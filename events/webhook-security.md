@@ -78,7 +78,3 @@ Kick will attempt to send a webhook 3 times over a period of time until a 200 re
 After a certain thresholds of errors received from an apps webhook endpoint, Kick may automatically unsubscribe the app from receiving webhooks.
 
 The app would then need to resubscribe to webhooks.
-
-{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/oauth/revoke" method="post" %}
-[https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
-{% endswagger %}
