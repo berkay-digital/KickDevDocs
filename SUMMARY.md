@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Welcome](README.md)
-  * [Contributing](readme/contributing.md)
 
 ## Getting Started
 
@@ -21,3 +20,8 @@
 * [Webhooks](events/webhook-security.md)
 * [Subscribe to Events](events/subscribe-to-events.md)
 * [Webhook Payloads](events/event-types.md)
+
+
+## How do I contribute?
+
+* [Contributing](CONTRIBUTING.md)
