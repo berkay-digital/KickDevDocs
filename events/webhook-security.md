@@ -27,7 +27,6 @@ Kick-Event-Message-Signature header is used to validate if a request has come fr
 This is the Kick public key. Any request that is sent from our servers will be have a signature signed by our Private Key, which can be decrypted using this Public Key.
 
 ```
-// Some code
 -----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq/+l1WnlRrGSolDMA+A8
 6rAhMbQGmQ2SapVcGM3zq8ANXjnhDWocMqfWcTd95btDydITa10kDvHzw9WQOqp2
@@ -56,7 +55,6 @@ Here are some examples of verifying the signature in different languages.
 #### Golang
 
 ```go
-// Some code
 func Verify(publicKey *rsa.PublicKey, body []byte, signature []byte) error {
    decoded := make([]byte, base64.StdEncoding.DecodedLen(len(signature)))
 
