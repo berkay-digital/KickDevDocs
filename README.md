@@ -32,7 +32,7 @@ Hi :wave: Just want to let you know what we are working on in this closed-beta p
 
 We're rapidly building a world-class Public API, the following table highlights the current status of various features available to developers.
 
-Our goals during this phase is to get feedback and iterate quickly. We want to create a well crafted, stable API that works together seamlessly which means we will be continually improving the API over the Alpha period based on your feedback.
+Our goals during this phase is to get feedback and iterate quickly. We want to create a well crafted, stable API that works together seamlessly which means we will be continually improving the API over the Closed BETA period based on your feedback.
 
 ### Feedback
 
