@@ -46,21 +46,28 @@ Although we will be extremely active on the Github Issues on the documentation r
 
 :green\_circle: - Stable
 
+:yellow\_circle: - New
+
 :orange\_circle: - Implemented pending changes
 
 :blue\_circle: - In development
 
 :red\_circle: - Not yet implemented
 
-| Feature | Implemented | Status |
-|---------|------------|---------|
-| GET /users | 🟢 | Stable |
-| GET /channels | 🟠 | Subject to change. Moving the query parameter from streamer_id to broadcaster_user_id |
-| PATCH /channels | 🟢 | Stable |
-| GET /categories/category_id | 🟢 | Stable |
-| GET /categories | 🟢 | Stable |
-| POST /chat | 🔵 | In progress |
-| App Bots | 🔵 | In progress |
-| App Access Token | 🔵 | In Progress |
-| Webhook Event-Signature | 🔵 | In Progress |
-| Webhook Event Structure | 🟠 | Will remove Channel ID from all events |
+| Feature                             | Implemented      | Status              |
+| ----------------------------------- | ---------------- | ------------------- |
+| GET /users                          | 🟢               | Stable              |
+| GET /channels                       | :green\_circle:  | Stable              |
+| PATCH /channels                     | 🟢               | Stable              |
+| GET /categories/category\_id        | 🟢               | Stable              |
+| GET /categories                     | 🟢               | Stable              |
+| POST /chat                          | :yellow\_circle: | New                 |
+| POST /token/introspect              | :yellow\_circle: | New                 |
+| App Bots                            | 🔵               | In progress         |
+| App Access Token                    | :red\_circle:    | Not yet implemented |
+| Webhook Event-Signature             | :green\_circle:  | Stable              |
+| Webhook Event Structure             | :green\_circle:  | Stable              |
+| Optional Scopes                     | :red\_circle:    | Not yet implemented |
+| Chat bot badge                      | 🔵               | In progress         |
+| Granular scope OAuth consent screen | 🔵               | In progress         |
+
