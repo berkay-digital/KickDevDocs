@@ -24,12 +24,10 @@ The Kick OAuth server is hosted on id.kick.com.
 Information from creating an App will be required in these endpoints. Checkout the Kick Apps Setup page to get the information for your App.
 
 {% hint style="info" %}
-The host URL for our OAuth server is different from our API server.&#x20;
+The host URL for our OAuth server is different from our API server.
 
 The Host URL is: _https://id.kick.com_
 {% endhint %}
-
-
 
 ## Authorization Endpoint
 
@@ -39,16 +37,15 @@ Directs the user to the authorization server where they can log in and approve t
 
 **Query Parameters**
 
-
-| Name | Required | Type | Description |
-|------|----------|------|-------------|
-| `client_id` | Yes | string | Your application's client id |
-| `response_type` | Yes | string | `code` |
-| `redirect_uri` | Yes | uri | The URI to redirect users to after authorization |
-| `state` | Yes (at the moment) | string | A random string to maintain state between the request and callback |
-| `scope` | Yes | string | Scopes for request |
-| `code_challenge` | Yes | string | OAuth code challenge |
-| `code_challenge_method` | Yes | string | `S256` |
+| Name                    | Required            | Type   | Description                                                        |
+| ----------------------- | ------------------- | ------ | ------------------------------------------------------------------ |
+| `client_id`             | Yes                 | string | Your application's client id                                       |
+| `response_type`         | Yes                 | string | `code`                                                             |
+| `redirect_uri`          | Yes                 | uri    | The URI to redirect users to after authorization                   |
+| `state`                 | Yes (at the moment) | string | A random string to maintain state between the request and callback |
+| `scope`                 | Yes                 | string | Scopes for request                                                 |
+| `code_challenge`        | Yes                 | string | OAuth code challenge                                               |
+| `code_challenge_method` | Yes                 | string | `S256`                                                             |
 
 **Response**
 
@@ -90,8 +87,6 @@ https://id.kick.com/oauth/authorize?
 https://yourapp.com/callback?code=<code>&state=random-state
 ```
 
-
-
 ## Token Endpoint
 
 <mark style="color:green;">`POST`</mark> `/oauth/token`
@@ -100,14 +95,14 @@ Exchanges the code for a valid access token and a refresh token that can be used
 
 **Body**
 
-| Name | Required | Type | Description |
-|------|----------|------|-------------|
-| `code` | Yes | string | Code received during the Authorization Flow |
-| `client_id` | Yes | string | Your application's client id |
-| `client_secret` | Yes | string | You application's client secret |
-| `redirect_uri` | Yes | string | The URI to redirect users to after authorization |
-| `grant_type` | Yes | string | `authorization_code` |
-| `code_verifier` | Yes | string | To verify PKCE challenge code created |
+| Name            | Required | Type   | Description                                      |
+| --------------- | -------- | ------ | ------------------------------------------------ |
+| `code`          | Yes      | string | Code received during the Authorization Flow      |
+| `client_id`     | Yes      | string | Your application's client id                     |
+| `client_secret` | Yes      | string | You application's client secret                  |
+| `redirect_uri`  | Yes      | string | The URI to redirect users to after authorization |
+| `grant_type`    | Yes      | string | `authorization_code`                             |
+| `code_verifier` | Yes      | string | To verify PKCE challenge code created            |
 
 **Response**
 
@@ -159,8 +154,6 @@ Request Form Body:
 }
 ```
 
-
-
 ## Refresh Token Endpoint
 
 <mark style="color:green;">`POST`</mark> `/oauth/token`
@@ -169,12 +162,12 @@ Pass in refresh token and refresh both access and refresh codes.
 
 **Body**
 
-| Name | Required |  Type | Description |
-|------|----------|------|-------------|
-| `refresh_token` | Yes | string | Code received during the Authorization Flow |
-| `client_id` | Yes | string | Your application's client id |
-| `client_secret` | Yes | string | You application's client secret |
-| `grant_type` | Yes | string | `refresh_token` |
+| Name            | Required | Type   | Description                                 |
+| --------------- | -------- | ------ | ------------------------------------------- |
+| `refresh_token` | Yes      | string | Code received during the Authorization Flow |
+| `client_id`     | Yes      | string | Your application's client id                |
+| `client_secret` | Yes      | string | You application's client secret             |
+| `grant_type`    | Yes      | string | `refresh_token`                             |
 
 **Response**
 
@@ -233,10 +226,7 @@ Pass in a token to revoke access to that token.
 
 **Query**
 
-| Name | Required | Type | Description |
-|------|----------|------|-------------|
-| `token` | Yes | string | The token to be revoked |
-| `token_hint_type` | No | string | `access_token or refresh_token` |
+<table><thead><tr><th width="205">Name</th><th>Required</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>token</code></td><td>Yes</td><td>string</td><td>The token to be revoked</td></tr><tr><td><code>token_hint_type</code></td><td>No</td><td>string</td><td><code>access_token or refresh_token</code></td></tr></tbody></table>
 
 **Response**
 
@@ -260,10 +250,16 @@ OK
 POST 
 https://id.kick.com/oauth/revoke?token=<your_token>&token_hint_type=<token_type>
 ```
+
 #### Example Response
 
 ```
 OK
 ```
 
+
+
+{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/public/v1/token/introspect" method="post" %}
+[https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
+{% endswagger %}
 
