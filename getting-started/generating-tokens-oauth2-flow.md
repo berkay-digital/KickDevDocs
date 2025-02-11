@@ -257,9 +257,3 @@ https://id.kick.com/oauth/revoke?token=<your_token>&token_hint_type=<token_type>
 OK
 ```
 
-
-
-{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/public/v1/token/introspect" method="post" %}
-[https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
-{% endswagger %}
-
