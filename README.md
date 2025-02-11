@@ -44,30 +44,30 @@ Although we will be extremely active on the Github Issues on the documentation r
 
 ### Our Pipeline Currently
 
-:green\_circle: - Stable
+🟢 - Stable
 
-:yellow\_circle: - New
+🟡 - New
 
-:orange\_circle: - Implemented pending changes
+🟠 - Implemented pending changes
 
-:blue\_circle: - In development
+🔵 - In development
 
-:red\_circle: - Not yet implemented
+🔴 - Not yet implemented
 
 | Feature                             | Implemented      | Status              |
 | ----------------------------------- | ---------------- | ------------------- |
 | GET /users                          | 🟢               | Stable              |
-| GET /channels                       | :green\_circle:  | Stable              |
+| GET /channels                       | 🟢               | Stable              |
 | PATCH /channels                     | 🟢               | Stable              |
 | GET /categories/category\_id        | 🟢               | Stable              |
 | GET /categories                     | 🟢               | Stable              |
-| POST /chat                          | :yellow\_circle: | New                 |
-| POST /token/introspect              | :yellow\_circle: | New                 |
+| POST /chat                          | 🟡               | New                 |
+| POST /token/introspect              | 🟡               | New                 |
 | App Bots                            | 🔵               | In progress         |
-| App Access Token                    | :red\_circle:    | Not yet implemented |
-| Webhook Event-Signature             | :green\_circle:  | Stable              |
-| Webhook Event Structure             | :green\_circle:  | Stable              |
-| Optional Scopes                     | :red\_circle:    | Not yet implemented |
+| App Access Token                    | 🔴               | Not yet implemented |
+| Webhook Event-Signature             | 🟢               | Stable              |
+| Webhook Event Structure             | 🟢               | Stable              |
+| Optional Scopes                     | 🔴               | Not yet implemented |
 | Chat bot badge                      | 🔵               | In progress         |
 | Granular scope OAuth consent screen | 🔵               | In progress         |
 
