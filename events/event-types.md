@@ -117,50 +117,17 @@ Public Gift Structure
     "is_anonymous": false,
     "user_id": 123456789,
     "username": "broadcaster_name",
-    "is_verified": true,
+    "is_verified": true,    
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
     "channel_slug": "broadcaster_channel"
   },
   "gifter": {
     "is_anonymous": false,
-    "user_id": 987654321,
-    "username": "gifter_name",
-    "is_verified": false,
-    "profile_picture": "https://example.com/sender_avatar.jpg",
-    "channel_slug": "gifter_channel"
-  },
-  "giftees": 
-  [
-    {
-      "is_anonymous": false,
-      "user_id": 561654654,
-      "username": "giftee_name",
-      "is_verified": true,
-      "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-      "channel_slug": "giftee_channel"
-    }
-  ],
-  "created_at": "2025-01-14T16:08:06Z"
-}
-
-Anonymous Gift Structure
-{
-  "broadcaster": {
-    "is_anonymous": false,
-    "user_id": 123456789,
-    "username": "broadcaster_name",
-    "is_verified": true,
-    "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-    "channel_slug": "broadcaster_channel"
-  },
-  "gifter": {
-    "is_anonymous": true,
-    "is_verified": null,
-    "user_id": null,
-    "username": null,
-    "is_verified": null,
-    "profile_picture": null,
-    "channel_slug": null
+    "user_id": 987654321, // null if is_anonymous=true
+    "username": "gifter_name", // null if is_anonymous=true
+    "is_verified": false, // null if is_anonymous=true
+    "profile_picture": "https://example.com/sender_avatar.jpg", // null if is_anonymous=true
+    "channel_slug": "gifter_channel" // null if is_anonymous=true
   },
   "giftees": 
   [
