@@ -15,6 +15,7 @@ Headers
 {
   "message_id": "unique_message_id_123",
   "broadcaster": {
+    "is_anonymous": false,
     "user_id": 123456789,
     "username": "broadcaster_name",
     "is_verified": true,
@@ -22,6 +23,7 @@ Headers
     "channel_slug": "broadcaster_channel"
   },
   "sender": {
+    "is_anonymous": false,
     "user_id": 987654321,
     "username": "sender_name",
     "is_verified": false,
@@ -55,6 +57,7 @@ Headers
 
 {
   "broadcaster": {
+    "is_anonymous": false,
     "user_id": 123456789,
     "username": "broadcaster_name",
     "is_verified": true,
@@ -62,6 +65,7 @@ Headers
     "channel_slug": "broadcaster_channel"
   },
   "follower": {
+    "is_anonymous": false,
     "user_id": 987654321,
     "username": "follower_name",
     "is_verified": false,
@@ -80,6 +84,7 @@ Headers
 
 {
   "broadcaster": {
+    "is_anonymous": false,
     "user_id": 123456789,
     "username": "broadcaster_name",
     "is_verified": true,
@@ -87,6 +92,7 @@ Headers
     "channel_slug": "broadcaster_channel"
   },
   "subscriber": {
+    "is_anonymous": false,
     "user_id": 987654321,
     "username": "subscriber_name",
     "is_verified": false,
@@ -108,6 +114,7 @@ Headers
 Public Gift Structure
 {
   "broadcaster": {
+    "is_anonymous": false,
     "user_id": 123456789,
     "username": "broadcaster_name",
     "is_verified": true,
@@ -115,6 +122,7 @@ Public Gift Structure
     "channel_slug": "broadcaster_channel"
   },
   "gifter": {
+    "is_anonymous": false,
     "user_id": 987654321,
     "username": "gifter_name",
     "is_verified": false,
@@ -124,6 +132,7 @@ Public Gift Structure
   "giftees": 
   [
     {
+      "is_anonymous": false,
       "user_id": 561654654,
       "username": "giftee_name",
       "is_verified": true,
@@ -137,6 +146,7 @@ Public Gift Structure
 Anonymous Gift Structure
 {
   "broadcaster": {
+    "is_anonymous": false,
     "user_id": 123456789,
     "username": "broadcaster_name",
     "is_verified": true,
@@ -144,11 +154,18 @@ Anonymous Gift Structure
     "channel_slug": "broadcaster_channel"
   },
   "gifter": {
-    "username": "Anonymous",
+    "is_anonymous": true,
+    "is_verified": null,
+    "user_id": null,
+    "username": null,
+    "is_verified": null,
+    "profile_picture": null,
+    "channel_slug": null
   },
   "giftees": 
   [
     {
+      "is_anonymous": false,
       "user_id": 561654654,
       "username": "giftee_name",
       "is_verified": true,
@@ -169,6 +186,7 @@ Headers
 
 {
   "broadcaster": {
+    "is_anonymous": false,
     "user_id": 123456789,
     "username": "broadcaster_name",
     "is_verified": true,
@@ -176,6 +194,7 @@ Headers
     "channel_slug": "broadcaster_channel"
   },
   "subscriber": {
+    "is_anonymous": false,
     "user_id": 987654321,
     "username": "subscriber_name",
     "is_verified": false,
