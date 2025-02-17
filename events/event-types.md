@@ -105,6 +105,7 @@ Headers
 - Kick-Event-Type: “channel.subscription.gifts”
 - Kick-Event-Version: “1”
 
+Public Gift Structure
 {
   "broadcaster": {
     "user_id": 123456789,
@@ -119,6 +120,31 @@ Headers
     "is_verified": false,
     "profile_picture": "https://example.com/sender_avatar.jpg",
     "channel_slug": "gifter_channel"
+  },
+  "giftees": 
+  [
+    {
+      "user_id": 561654654,
+      "username": "giftee_name",
+      "is_verified": true,
+      "profile_picture": "https://example.com/broadcaster_avatar.jpg",
+      "channel_slug": "giftee_channel"
+    }
+  ],
+  "created_at": "2025-01-14T16:08:06Z"
+}
+
+Anonymous Gift Structure
+{
+  "broadcaster": {
+    "user_id": 123456789,
+    "username": "broadcaster_name",
+    "is_verified": true,
+    "profile_picture": "https://example.com/broadcaster_avatar.jpg",
+    "channel_slug": "broadcaster_channel"
+  },
+  "gifter": {
+    "username": "Anonymous",
   },
   "giftees": 
   [
