@@ -76,4 +76,4 @@ Our goals during this phase is to get feedback and iterate quickly. We want to c
 | Optional Scopes                     | 🟡               | New                 |
 | Chat bot badge                      | 🟡               | New                 |
 | Granular scope OAuth consent screen | 🟡               | New                 |
-| GET /public-key                     | 🔴               | Not yet implemented |
+| GET /public-key                     | 🟡               | New                 |
